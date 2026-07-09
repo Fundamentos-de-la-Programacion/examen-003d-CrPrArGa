@@ -163,7 +163,7 @@ def main():
             precio = int(input("Precio: "))
             cupos = input("Cantidad de cupos: ")
             
-            if (validar_texto(codigo), validar_texto(nombre), validar_texto(tipo), validar_postivo(duracion), validar_acceso(acceso), validar_clases(clases), validar_horario(horario), validar_texto(cupos), validar_postivo(precio)):
+            if (validar_texto(codigo), validar_texto(nombre), validar_plan(tipo), validar_postivo(duracion), validar_acceso(acceso), validar_clases(clases), validar_horario(horario), validar_texto(cupos), validar_postivo(precio)):
                 exito = agregar_plan(codigo, nombre, tipo, duracion, acceso, clases, precio, cupos, horario)
             else:
                 print("Error")
